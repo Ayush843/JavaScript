@@ -29,10 +29,36 @@ let myObj = {
 }
 
 const myFunction = function(){
-    console.log("hello");
+    //console.log("hello");
     
 }
-console.log(typeof myFunction);
+//console.log(typeof myFunction);
+
+
+
+// ********* memory **************
+
+// Stack(Primitive), Heap(Non-primitive)
+
+let myName = "ayush"
+
+let anotherName = myName
+anotherName = "ashu"
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email: "aysuh@go.com",
+    upii: "userghghv@hdfc"
+}
+
+let userTwo = userOne
+userTwo.email = "ayush@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
 
 
 
